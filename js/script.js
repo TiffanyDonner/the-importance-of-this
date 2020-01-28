@@ -14,5 +14,10 @@ $(document).ready(function() {
 	// Open the paragraph once the image is clicked
 	$("img").click(function() {
 		$(this).next().children("p").slideDown();
+    });
+
+    // Highlight when card it clicked
+    $(".card").click(function() {
+		$(this).toggleClass("highlight");	 
 	});
 });
